@@ -136,7 +136,8 @@ IntegerVector polyurncppBoth(IntegerVector e,arma::mat A,arma::vec muA0,
             tmpMuB = tmpSigB*(sigmaBInv*arma::trans(B.rows(ind))*unit + sigmaB0Inv*muB0);
 
             pp[j] = dmvnrmArma(A.row(i),arma::trans(tmpMuA),tmpSigA+sigmaA,true)[0]+
-                dmvnrmArma(B.row(i),arma::trans(tmpMuB),tmpSigB+sigmaB,true)[0] + log(ind.size());
+                dmvnrmArma(B.row(i),arma::trans(tmpMuB),tmpSigB+sigmaB,true)[0] +
+                log(ind.size()*1.0);
         }
         //Rf_PrintValue(wrap(eset));
         //Rf_PrintValue(wrap(pp));
@@ -177,7 +178,8 @@ IntegerVector polyurncppInt(IntegerVector e,arma::vec muA0,arma::mat sigma0,
             unit.ones();
             tmpSig = arma::inv_sympd(sigma0Inv + ind.size()*sigmaInv);
             tmpMu = tmpSig*(sigmaInv*arma::trans(A.rows(ind))*unit + sigma0Inv*muA0);
-            pp[j] = dmvnrmArma(A.row(i),arma::trans(tmpMu),tmpSig+sigma,true)[0] + log(ind.size());
+            pp[j] = dmvnrmArma(A.row(i),arma::trans(tmpMu),tmpSig+sigma,true)[0] +
+                log(ind.size()*1.0);
         }
         //Rf_PrintValue(wrap(eset));
         //Rf_PrintValue(wrap(pp));

@@ -2,7 +2,7 @@ Package: BClustLonG
 Type: Package
 Title: A Dirichlet Process Mixture Model for Clustering Longitudinal
         Gene Expression Data
-Version: 0.1.1
+Version: 0.1.2
 Author: Jiehuan Sun [aut, cre], Jose D. Herazo-Maya[aut], Naftali Kaminski[aut], Hongyu Zhao [aut], and Joshua L. Warren [aut],  
 Maintainer: Jiehuan Sun <jiehuan.sun@gmail.com>
 Description: Many clustering methods have been proposed, but
@@ -29,6 +29,6 @@ VignetteBuilder: knitr
 LinkingTo: Rcpp, RcppArmadillo
 RoxygenNote: 6.0.1
 NeedsCompilation: yes
-Packaged: 2017-12-14 19:23:01 UTC; JiehuanSun
+Packaged: 2017-12-15 13:21:23 UTC; JiehuanSun
 Repository: CRAN
-Date/Publication: 2017-12-15 09:12:49 UTC
+Date/Publication: 2017-12-15 13:52:52 UTC
