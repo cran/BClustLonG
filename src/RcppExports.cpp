@@ -8,7 +8,7 @@ using namespace Rcpp;
 
 // stlSort
 IntegerVector stlSort(IntegerVector x);
-RcppExport SEXP BClustLonG_stlSort(SEXP xSEXP) {
+RcppExport SEXP _BClustLonG_stlSort(SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -19,7 +19,7 @@ END_RCPP
 }
 // myc
 IntegerVector myc(IntegerVector x, IntegerVector y);
-RcppExport SEXP BClustLonG_myc(SEXP xSEXP, SEXP ySEXP) {
+RcppExport SEXP _BClustLonG_myc(SEXP xSEXP, SEXP ySEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -31,7 +31,7 @@ END_RCPP
 }
 // dmvnrmArma
 arma::vec dmvnrmArma(arma::mat x, arma::rowvec mean, arma::mat sigma, bool logd);
-RcppExport SEXP BClustLonG_dmvnrmArma(SEXP xSEXP, SEXP meanSEXP, SEXP sigmaSEXP, SEXP logdSEXP) {
+RcppExport SEXP _BClustLonG_dmvnrmArma(SEXP xSEXP, SEXP meanSEXP, SEXP sigmaSEXP, SEXP logdSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -45,7 +45,7 @@ END_RCPP
 }
 // myfind
 arma::uvec myfind(IntegerVector evec, int e);
-RcppExport SEXP BClustLonG_myfind(SEXP evecSEXP, SEXP eSEXP) {
+RcppExport SEXP _BClustLonG_myfind(SEXP evecSEXP, SEXP eSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -57,7 +57,7 @@ END_RCPP
 }
 // mvrnormArma
 arma::mat mvrnormArma(int n, arma::vec mu, arma::mat sigma);
-RcppExport SEXP BClustLonG_mvrnormArma(SEXP nSEXP, SEXP muSEXP, SEXP sigmaSEXP) {
+RcppExport SEXP _BClustLonG_mvrnormArma(SEXP nSEXP, SEXP muSEXP, SEXP sigmaSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -70,7 +70,7 @@ END_RCPP
 }
 // samLamV2Cpp
 arma::mat samLamV2Cpp(arma::mat A, arma::mat eta, arma::vec sig, arma::mat lam, arma::mat phi, arma::rowvec tau);
-RcppExport SEXP BClustLonG_samLamV2Cpp(SEXP ASEXP, SEXP etaSEXP, SEXP sigSEXP, SEXP lamSEXP, SEXP phiSEXP, SEXP tauSEXP) {
+RcppExport SEXP _BClustLonG_samLamV2Cpp(SEXP ASEXP, SEXP etaSEXP, SEXP sigSEXP, SEXP lamSEXP, SEXP phiSEXP, SEXP tauSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -86,7 +86,7 @@ END_RCPP
 }
 // polyurncppBoth
 IntegerVector polyurncppBoth(IntegerVector e, arma::mat A, arma::vec muA0, arma::mat sigmaA, arma::mat sigmaAInv, arma::mat sigmaA0, arma::mat sigmaA0Inv, arma::mat B, arma::vec muB0, arma::mat sigmaB, arma::mat sigmaBInv, arma::mat sigmaB0, arma::mat sigmaB0Inv, double c);
-RcppExport SEXP BClustLonG_polyurncppBoth(SEXP eSEXP, SEXP ASEXP, SEXP muA0SEXP, SEXP sigmaASEXP, SEXP sigmaAInvSEXP, SEXP sigmaA0SEXP, SEXP sigmaA0InvSEXP, SEXP BSEXP, SEXP muB0SEXP, SEXP sigmaBSEXP, SEXP sigmaBInvSEXP, SEXP sigmaB0SEXP, SEXP sigmaB0InvSEXP, SEXP cSEXP) {
+RcppExport SEXP _BClustLonG_polyurncppBoth(SEXP eSEXP, SEXP ASEXP, SEXP muA0SEXP, SEXP sigmaASEXP, SEXP sigmaAInvSEXP, SEXP sigmaA0SEXP, SEXP sigmaA0InvSEXP, SEXP BSEXP, SEXP muB0SEXP, SEXP sigmaBSEXP, SEXP sigmaBInvSEXP, SEXP sigmaB0SEXP, SEXP sigmaB0InvSEXP, SEXP cSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -110,7 +110,7 @@ END_RCPP
 }
 // polyurncppInt
 IntegerVector polyurncppInt(IntegerVector e, arma::vec muA0, arma::mat sigma0, arma::mat A, arma::mat sigma, arma::mat sigmaInv, arma::mat sigma0Inv, double c);
-RcppExport SEXP BClustLonG_polyurncppInt(SEXP eSEXP, SEXP muA0SEXP, SEXP sigma0SEXP, SEXP ASEXP, SEXP sigmaSEXP, SEXP sigmaInvSEXP, SEXP sigma0InvSEXP, SEXP cSEXP) {
+RcppExport SEXP _BClustLonG_polyurncppInt(SEXP eSEXP, SEXP muA0SEXP, SEXP sigma0SEXP, SEXP ASEXP, SEXP sigmaSEXP, SEXP sigmaInvSEXP, SEXP sigma0InvSEXP, SEXP cSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -128,7 +128,7 @@ END_RCPP
 }
 // calSim
 arma::mat calSim(arma::mat mat);
-RcppExport SEXP BClustLonG_calSim(SEXP matSEXP) {
+RcppExport SEXP _BClustLonG_calSim(SEXP matSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -136,4 +136,22 @@ BEGIN_RCPP
     rcpp_result_gen = Rcpp::wrap(calSim(mat));
     return rcpp_result_gen;
 END_RCPP
+}
+
+static const R_CallMethodDef CallEntries[] = {
+    {"_BClustLonG_stlSort", (DL_FUNC) &_BClustLonG_stlSort, 1},
+    {"_BClustLonG_myc", (DL_FUNC) &_BClustLonG_myc, 2},
+    {"_BClustLonG_dmvnrmArma", (DL_FUNC) &_BClustLonG_dmvnrmArma, 4},
+    {"_BClustLonG_myfind", (DL_FUNC) &_BClustLonG_myfind, 2},
+    {"_BClustLonG_mvrnormArma", (DL_FUNC) &_BClustLonG_mvrnormArma, 3},
+    {"_BClustLonG_samLamV2Cpp", (DL_FUNC) &_BClustLonG_samLamV2Cpp, 6},
+    {"_BClustLonG_polyurncppBoth", (DL_FUNC) &_BClustLonG_polyurncppBoth, 14},
+    {"_BClustLonG_polyurncppInt", (DL_FUNC) &_BClustLonG_polyurncppInt, 8},
+    {"_BClustLonG_calSim", (DL_FUNC) &_BClustLonG_calSim, 1},
+    {NULL, NULL, 0}
+};
+
+RcppExport void R_init_BClustLonG(DllInfo *dll) {
+    R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
+    R_useDynamicSymbols(dll, FALSE);
 }

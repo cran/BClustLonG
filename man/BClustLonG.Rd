@@ -4,10 +4,16 @@
 \alias{BClustLonG}
 \title{A Dirichlet process mixture model for clustering longitudinal gene expression data.}
 \usage{
-BClustLonG(data = NULL, iter = 20000, thin = 2, savePara = FALSE,
-  infoVar = c("both", "int")[1], factor = TRUE, hyperPara = list(v1 = 0.1,
-  v2 = 0.1, v = 1.5, c = 1, a = 0, b = 10, cd = 1, aa1 = 2, aa2 = 1, alpha0 =
-  -1, alpha1 = -1e-04, cutoff = 1e-04, h = 100))
+BClustLonG(
+  data = NULL,
+  iter = 20000,
+  thin = 2,
+  savePara = FALSE,
+  infoVar = c("both", "int")[1],
+  factor = TRUE,
+  hyperPara = list(v1 = 0.1, v2 = 0.1, v = 1.5, c = 1, a = 0, b = 10, cd = 1, aa1 = 2,
+    aa2 = 1, alpha0 = -1, alpha1 = -1e-04, cutoff = 1e-04, h = 100)
+)
 }
 \arguments{
 \item{data}{Data list with three elements: Y (gene expression data with

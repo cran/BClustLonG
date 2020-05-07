@@ -29,9 +29,7 @@ IntegerVector myc(IntegerVector x, IntegerVector y) {
         z=y;
     }else if(y.size()==0 and x.size() >0){
         z=x;
-    }else{
-        z=z;
-    }
+    }else{}
 
     return stlSort(z);
 }

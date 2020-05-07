@@ -4,49 +4,49 @@
 #' Internal function for sorting
 #' @noRd
 stlSort <- function(x) {
-    .Call('BClustLonG_stlSort', PACKAGE = 'BClustLonG', x)
+    .Call('_BClustLonG_stlSort', PACKAGE = 'BClustLonG', x)
 }
 
 #' Internal function for concatenating
 #' @noRd
 myc <- function(x, y) {
-    .Call('BClustLonG_myc', PACKAGE = 'BClustLonG', x, y)
+    .Call('_BClustLonG_myc', PACKAGE = 'BClustLonG', x, y)
 }
 
 #' Internal function for density function of MVN
 #' @noRd
 dmvnrmArma <- function(x, mean, sigma, logd = FALSE) {
-    .Call('BClustLonG_dmvnrmArma', PACKAGE = 'BClustLonG', x, mean, sigma, logd)
+    .Call('_BClustLonG_dmvnrmArma', PACKAGE = 'BClustLonG', x, mean, sigma, logd)
 }
 
 #' Internal function for finding matched index
 #' @noRd
 myfind <- function(evec, e) {
-    .Call('BClustLonG_myfind', PACKAGE = 'BClustLonG', evec, e)
+    .Call('_BClustLonG_myfind', PACKAGE = 'BClustLonG', evec, e)
 }
 
 #' Internal function for generating MVN random variables
 #' @noRd
 mvrnormArma <- function(n, mu, sigma) {
-    .Call('BClustLonG_mvrnormArma', PACKAGE = 'BClustLonG', n, mu, sigma)
+    .Call('_BClustLonG_mvrnormArma', PACKAGE = 'BClustLonG', n, mu, sigma)
 }
 
 #' Internal function for sampling lambda in the factor analysis
 #' @noRd
 samLamV2Cpp <- function(A, eta, sig, lam, phi, tau) {
-    .Call('BClustLonG_samLamV2Cpp', PACKAGE = 'BClustLonG', A, eta, sig, lam, phi, tau)
+    .Call('_BClustLonG_samLamV2Cpp', PACKAGE = 'BClustLonG', A, eta, sig, lam, phi, tau)
 }
 
 #' Internal function for sampling memberhsip indicators in sparse both
 #' @noRd
 polyurncppBoth <- function(e, A, muA0, sigmaA, sigmaAInv, sigmaA0, sigmaA0Inv, B, muB0, sigmaB, sigmaBInv, sigmaB0, sigmaB0Inv, c) {
-    .Call('BClustLonG_polyurncppBoth', PACKAGE = 'BClustLonG', e, A, muA0, sigmaA, sigmaAInv, sigmaA0, sigmaA0Inv, B, muB0, sigmaB, sigmaBInv, sigmaB0, sigmaB0Inv, c)
+    .Call('_BClustLonG_polyurncppBoth', PACKAGE = 'BClustLonG', e, A, muA0, sigmaA, sigmaAInv, sigmaA0, sigmaA0Inv, B, muB0, sigmaB, sigmaBInv, sigmaB0, sigmaB0Inv, c)
 }
 
 #' Internal function for sampling memberhsip indicators in sparse int
 #' @noRd
 polyurncppInt <- function(e, muA0, sigma0, A, sigma, sigmaInv, sigma0Inv, c) {
-    .Call('BClustLonG_polyurncppInt', PACKAGE = 'BClustLonG', e, muA0, sigma0, A, sigma, sigmaInv, sigma0Inv, c)
+    .Call('_BClustLonG_polyurncppInt', PACKAGE = 'BClustLonG', e, muA0, sigma0, A, sigma, sigmaInv, sigma0Inv, c)
 }
 
 #' Function to calculate the similarity matrix based on the
@@ -60,6 +60,6 @@ polyurncppInt <- function(e, muA0, sigma0, A, sigma, sigmaInv, sigma0Inv, c) {
 #' mat = matrix(rep(1:3,each=n/3),nrow=n,ncol=iters)
 #' sim = calSim(t(mat))
 calSim <- function(mat) {
-    .Call('BClustLonG_calSim', PACKAGE = 'BClustLonG', mat)
+    .Call('_BClustLonG_calSim', PACKAGE = 'BClustLonG', mat)
 }
 
